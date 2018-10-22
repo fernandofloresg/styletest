@@ -4,6 +4,7 @@
 		<title></title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 	</head>
 		<body>
 			<div class="row">
@@ -15,7 +16,7 @@
 			</div>
 
 
-					
+
 			  <ul class="collapsible">
 			    <li>
 			      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
@@ -30,7 +31,11 @@
 			      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
 			    </li>
 			  </ul>
-		        
+
+				<div class="container" id="chart-area">
+					<canvas id="myChart" width="400" height="400"></canvas>
+				</div>
+
 
 		</body>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -44,5 +49,8 @@
 		  $(document).ready(function(){
 		    $('.collapsible').collapsible();
 		  });
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	<script src="chart_logic.js">
 	</script>
 </html>
