@@ -5,11 +5,13 @@ var myChart = new Chart(ctx, {
         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
         datasets: [{
             label: '# of Votes',
+
             data: [12, 19, 3, 12, 5, 15, 7, 2, 10],
             backgroundColor: '#FFF',
             borderColor: '#FFF',
             borderWidth: 10,
             fill: false
+
         }]
     },
     options: {
