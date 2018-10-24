@@ -70,3 +70,58 @@ var myChart = new Chart(ctx, {
 });
 
 console.log('here')
+
+
+
+var multipleCtx = document.getElementById("multipleChart").getContext('2d');
+var multipleChart = new Chart(multipleCtx, {
+    type: 'line',
+    data: {
+        datasets: [{
+            data: [2, 5, 10, 7, 2, 0],
+            label: 'Left dataset',
+            backgroundColor: 'rgba(100,15,15,0.2)',
+            borderColor: 'rgba(100,15,15,1)',
+            // This binds the dataset to the left y axis
+            
+        },{
+            data: [22,100,16,60,20,0],
+            label: 'Right dataset',
+            backgroundColor: 'rgba(10,150,13,0.2)',
+            borderColor: 'rgba(10,150,13,1)',
+
+            // This binds the dataset to the right y axis
+            
+        },{
+            data: [25,78,20,73,19,0],
+            label: 'Right dataset',
+            backgroundColor: 'rgba(13,150,130,0.2)',
+            borderColor: 'rgba(13,150,130,1)',
+
+            // This binds the dataset to the right y axis
+          
+        },{
+            data: [15,18,70,33,69,0],
+            label: 'Right dataset',
+            backgroundColor: 'rgba(130,15,130,0.2)',
+            borderColor: 'rgba(130,15,130,1)',
+
+            // This binds the dataset to the right y axis
+
+        }],
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                id: 'left-y-axis',
+                type: 'linear',
+                position: 'left'
+            }]
+        },
+        legend:{
+            display: false,
+
+        }
+    }
+});
