@@ -1,3 +1,23 @@
+let draw = Chart.controllers.line.prototype.draw;
+Chart.controllers.line = Chart.controllers.line.extend({
+    draw: function() {
+        draw.apply(this, arguments);
+        let ctx = this.chart.chart.ctx;
+        let _stroke = ctx.stroke;
+        ctx.stroke = function() {
+            ctx.save();
+            ctx.shadowColor = '#263238';
+            ctx.shadowBlur = 45;
+            ctx.shadowOffsetX = 2;
+            ctx.shadowOffsetY = 40;
+            _stroke.apply(this, arguments)
+            ctx.restore();
+        }
+    }
+});
+
+
+
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
@@ -16,6 +36,12 @@ var myChart = new Chart(ctx, {
     },
     options: {
       responsive: true,
+      legend: {
+        display: false,
+      },
+      animation: {
+            duration: 0, // general animation time
+        },
       elements: {
             line: {
                 tension: 0, // disables bezier curves
@@ -27,6 +53,9 @@ var myChart = new Chart(ctx, {
           }],
           yAxes: [{
             display:false,
+            ticks: {
+                    beginAtZero:true
+                }
           }]
         },
         hover: {
