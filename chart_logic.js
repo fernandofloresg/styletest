@@ -79,31 +79,63 @@ var multipleChart = new Chart(multipleCtx, {
     data: {
         datasets: [{
             data: [2, 5, 10, 7, 2, 0],
-            label: 'Left dataset',
-            backgroundColor: 'rgba(100,15,15,0.2)',
-            borderColor: 'rgba(100,15,15,1)',
+            label: 'Temperatura',
+            backgroundColor: 'rgb(0, 229, 255,0.1)',
+            borderColor: 'rgb(0, 229, 255)',
             // This binds the dataset to the left y axis
             
         },{
             data: [22,100,16,60,20,0],
             label: 'Right dataset',
-            backgroundColor: 'rgba(10,150,13,0.2)',
-            borderColor: 'rgba(10,150,13,1)',
+            backgroundColor: 'rgb(198, 40, 40,0.1)',
+            borderColor: 'rgb(198, 40, 40)',
+
+            // This binds the dataset to the right y axis
+            
+        },{
+            data: [4.4,1.0,7.6,2.0,3.5,0],
+            label: 'Right dataset',
+            backgroundColor: 'rgb(76, 175, 80,0.1)',
+            borderColor: 'rgb(76, 175, 80)',
+
+            // This binds the dataset to the right y axis
+            
+        },{
+            data: [17,80,26,90,58,0],
+            label: 'Right dataset',
+            backgroundColor: 'rgb(255, 152, 0, 0.1)',
+            borderColor: 'rgb(255, 152, 0)',
+
+            // This binds the dataset to the right y axis
+            
+        },{
+            data: [90,86,76,60,33,0],
+            label: 'Right dataset',
+            backgroundColor: 'rgb(0, 150, 136, 0.1)',
+            borderColor: 'rgb(0, 150, 136)',
+
+            // This binds the dataset to the right y axis
+            
+        },{
+            data: [22,30,16,50,20,0],
+            label: 'Right dataset',
+            backgroundColor: 'rgb(118, 255, 3, 0.1)',
+            borderColor: 'rgb(118, 255, 3)',
 
             // This binds the dataset to the right y axis
             
         },{
             data: [25,78,20,73,19,0],
             label: 'Right dataset',
-            backgroundColor: 'rgba(13,150,130,0.2)',
-            borderColor: 'rgba(13,150,130,1)',
+            backgroundColor: 'rgb(76, 175, 80,0.1)',
+            borderColor: 'rgb(76, 175, 80)',
 
             // This binds the dataset to the right y axis
           
         },{
             data: [15,18,70,33,69,0],
             label: 'Right dataset',
-            backgroundColor: 'rgba(130,15,130,0.2)',
+            backgroundColor: 'rgba(130,15,130,0.1)',
             borderColor: 'rgba(130,15,130,1)',
 
             // This binds the dataset to the right y axis
@@ -122,6 +154,16 @@ var multipleChart = new Chart(multipleCtx, {
         legend:{
             display: false,
 
+        },
+        animation: {
+            duration: 0,
+        },
+        elements:{
+            line:{
+                tension: 0,    
+            }
         }
+
     }
+
 });
