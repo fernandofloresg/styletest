@@ -11,47 +11,66 @@
 	</head>
 
 		<body>
-			<div class="row">
-				<div class="col s5 card-panel">
-					<p>Esta es una tarjeta</p>
+			<div class="container">
+				<div class="row">
+					<h1>Definición de estilos</h1>
+					<h2>Para el rediseño de la página de neurona wireless </h2>
+					<h3>Esta primer sección es una muestra de la fuente que se va a utilizar</h3>
+					<h4>Conocida como Open Sans by Google</h4>
+					<h5>Es actualmente utilizada en la más reciente actualización de Android 9 Pie</h5>
+
 				</div>
 
-				<div class="col s5 card-panel">
-				   	<span class="blue-text text-darken-2">This is a card panel with dark blue text</span>
+			</div>
+			<div class="row">
+				<div class="col s12 m5 ">
+					<div class="card-panel">
+						<p>Esta es una tarjeta</p>
+					</div>
+				</div>
+
+				<div class="col s12 m7">
+					<h3>Secciones de acordeón</h3>
 				</div>
 			</div>
+			<div class="row">
 
 
 
 			  <ul class="collapsible">
 			    <li>
-			      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-			      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+			      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Temperatura</div>
+			      <div class="collapsible-body"><span>Dentro de este acordeón podremos incluir texto</span></div>
 			    </li>
 			    <li>
-			      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-			      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+			      <div class="collapsible-header"><i class="material-icons">place</i>Gráficas</div>
+			      <div class="collapsible-body">
+							<div class="container">
+								<div class="card">
+									<div class="card-content white-text" style="background-image: linear-gradient(to right,red, yellow);">
+										<span class="card-title">Temperatura Ambiente (°C)</span>
+										<p>22.9°C</p>
+										<p class="right">máx. 32°C</p><br>
+										<p class="right">min. 22°C</p>
+										<canvas id="myChart"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
 			    </li>
 			    <li>
-			      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-			      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+			      <div class="collapsible-header"><i class="material-icons">whatshot</i>Cualquier cosa</div>
+			      <div class="collapsible-body">
+							<span>Esta es una forma bonita e interactiva de acceder a información <br>
+								sin tener que saturar la página inicial
+							</span>
+						</div>
 			    </li>
 			  </ul>
 
 				<div class="container">
-
-					<div class="card">
-						<div class="card-content white-text" style="background-image: linear-gradient(to right,red, yellow);">
-							<span class="card-title">Temperatura Ambiente (°C)</span>
-							<p>22.9°C</p>
-							<p class="right">máx. 32°C</p><br>
-							<p class="right">min. 22°C</p>
-							<canvas id="myChart"></canvas>
-						</div>
-					</div>
-				</div>
-
-				<div class="container">
+					<h5>Este es el ejemplo de una gráfica donde se podrá mostrar la sección de estadísticas,
+						 pudiendo soportar diversos sensores al mismo tiempo</h5>
 					<div class="card-panel">
 						<h4>Estadisticas</h4>
 						<div class="row"> 

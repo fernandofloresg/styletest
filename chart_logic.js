@@ -69,10 +69,6 @@ var myChart = new Chart(ctx, {
     }
 });
 
-console.log('here')
-
-
-
 var multipleCtx = document.getElementById("multipleChart").getContext('2d');
 var multipleChart = new Chart(multipleCtx, {
     type: 'line',
@@ -83,7 +79,7 @@ var multipleChart = new Chart(multipleCtx, {
             backgroundColor: 'rgb(0, 229, 255,0.1)',
             borderColor: 'rgb(0, 229, 255)',
             // This binds the dataset to the left y axis
-            
+
         },{
             data: [22,100,16,60,20,0],
             label: 'Right dataset',
@@ -123,7 +119,7 @@ var multipleChart = new Chart(multipleCtx, {
             borderColor: 'rgb(118, 255, 3)',
 
             // This binds the dataset to the right y axis
-            
+
         },{
             data: [25,78,20,73,19,0],
             label: 'Right dataset',
@@ -131,7 +127,7 @@ var multipleChart = new Chart(multipleCtx, {
             borderColor: 'rgb(76, 175, 80)',
 
             // This binds the dataset to the right y axis
-          
+
         },{
             data: [15,18,70,33,69,0],
             label: 'Right dataset',
