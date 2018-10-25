@@ -3,3 +3,40 @@
 .color-grafica{
 	background-image: linear-gradient(to right,red, yellow);
 }
+
+.material-icons{
+    display: inline-flex;
+    vertical-align: top;
+}
+
+i.icon-1 {
+    color: rgb(0, 229, 255);
+}
+
+i.icon-2 {
+	color: rgb(198, 40, 40);
+}
+
+i.icon-3 {
+	color: rgb(76, 175, 80);
+}
+
+i.icon-4{
+	color: rgb(255, 152, 0);
+}
+
+i.icon-5{
+	color: rgb(0, 150, 136);
+}
+
+i.icon-6{
+	color: rgb(118, 255, 3);
+}
+
+i.icon-7{
+	color: rgb(76, 175, 80);
+}
+
+i.icon-8{
+	color: rgba(130,15,130);
+}
