@@ -140,6 +140,7 @@ var multipleChart = new Chart(multipleCtx, {
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
     },
     options: {
+        responsive: true,
         scales: {
             yAxes: [{
                 id: 'left-y-axis',

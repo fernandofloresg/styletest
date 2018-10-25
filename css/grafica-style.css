@@ -4,11 +4,6 @@
 	background-image: linear-gradient(to right,red, yellow);
 }
 
-.material-icons{
-    display: inline-flex;
-    vertical-align: top;
-}
-
 i.icon-1 {
     color: rgb(0, 229, 255);
 }

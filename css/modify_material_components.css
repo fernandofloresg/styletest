@@ -5,3 +5,8 @@
 .card-panel {
   border-radius: 10px;
 }
+
+.material-icons{
+    display: inline-flex;
+    vertical-align: top;
+}

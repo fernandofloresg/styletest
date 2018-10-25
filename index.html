@@ -9,88 +9,159 @@
 		<link rel="stylesheet" type="text/css" href="css/font-style.css">
 		<link rel="stylesheet" type="text/css" href="css/grafica-style.css">
 		<link rel="stylesheet" type="text/css" href="css/modify_material_components.css">
+		<link rel="stylesheet" type="text/css" href="css/sidebar-style.css">
 	</head>
 
 		<body>
-			<div class="container" id="change">
-				<div class="row center" style="display : none;">
-					<a class="btn waves-effect waves-teal	" id="changeThemeButton">Cambiar tema a oscuro</a>
-				</div>
-				<div class="row">
-					<h1>Definición de estilos</h1>
-					<h2>Para el rediseño de la página de neurona wireless </h2>
-					<h3>Esta primer sección es una muestra de la fuente que se va a utilizar</h3>
-					<h4>Conocida como Open Sans by Google</h4>
-					<h5>Es actualmente utilizada en la más reciente actualización de Android 9 Pie</h5>
-
-				</div>
-
+			<div class="navbar-fixed">
+			 <nav>
+			    <div class="nav-wrapper">
+			      <!-- <span class="openbtn" onclick="openNav()">&#9776; </span> -->
+			      <ul id="nav-mobile" class="right hide-on-med-and-down">
+			        <li><a href="#">Sass</a></li>
+			        <li><a href="#">Components</a></li>
+			        <li><a href="#">JavaScript</a></li>
+			      </ul>
+			    </div>
+			  </nav>
 			</div>
+
 			<div class="row">
-				<div class="col s12 m5 ">
-					<div class="card-panel z-depth-3">
-						<p>Esta es una tarjeta</p>
+				<div id="mySidenav" class="sidebar">
+				<!--	 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+					  <a href="#">About</a>
+					  <a href="#">Services</a>
+					  <a href="#">Clients</a>
+					  <a href="#">Contact</a>
+				</div>
+				<div id="main" class="col">
+					<div class="container">
+						<div class="row center" style="display : none;">
+							<a class="btn waves-effect waves-teal	" id="changeThemeButton">Cambiar tema a oscuro</a>
+						</div>
+
+						<div class="row">
+							<h1>Definición de estilos</h1>
+							<h2>Para el rediseño de la página de neurona wireless </h2>
+							<h3>Esta primer sección es una muestra de la fuente que se va a utilizar</h3>
+							<h4>Conocida como Open Sans by Google</h4>
+							<h5>Es actualmente utilizada en la más reciente actualización de Android 9 Pie</h5>
+
+						</div>
 					</div>
-				</div>
 
-				<div class="col s12 m7">
-					<h3>Secciones de acordeón</h3>
-				</div>
-			</div>
-			<div class="row">
+					<div class="row">
+						<div class="col s12 m5 ">
+							<div class="card-panel">
+								<p>Esta es una tarjeta</p>
+							</div>
+						</div>
 
+						<div class="col s12 m7">
+							<h3>Secciones de acordeón</h3>
+						</div>
+					</div>
 
-
-			  <ul class="collapsible">
-			    <li>
-			      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Temperatura</div>
-			      <div class="collapsible-body"><span>Dentro de este acordeón podremos incluir texto</span></div>
-			    </li>
-			    <li>
-			      <div class="collapsible-header"><i class="material-icons">place</i>Gráficas</div>
-			      <div class="collapsible-body">
-							<div class="container">
-								<div class="card">
-									<div class="card-content white-text" style="background-image: linear-gradient(to right,red, yellow);">
-										<span class="card-title">Temperatura Ambiente (°C)</span>
-										<p>22.9°C</p>
-										<p class="right">máx. 32°C</p><br>
-										<p class="right">min. 22°C</p>
-										<canvas id="myChart"></canvas>
+					<div class="row">
+						<ul class="collapsible">
+					    	<li>
+					      		<div class="collapsible-header"><i class="material-icons">filter_drama</i>Temperatura</div>
+					      		<div class="collapsible-body"><span>Dentro de este acordeón podremos incluir texto</span></div>
+					   		</li>
+					    <li>
+					    	<div class="collapsible-header"><i class="material-icons">place</i>Gráficas</div>
+					      	<div class="collapsible-body">
+								<div class="container">
+									<div class="card">
+										<div class="card-content white-text" style="background-image: linear-gradient(to right,red, yellow);">
+												<span class="card-title">Temperatura Ambiente (°C)</span>
+												<p>22.9°C</p>
+												<p class="right">máx. 32°C</p><br>
+												<p class="right">min. 22°C</p>
+												<canvas id="myChart"></canvas>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-			    </li>
-			    <li>
-			      <div class="collapsible-header"><i class="material-icons">whatshot</i>Cualquier cosa</div>
-			      <div class="collapsible-body">
-							<span>Esta es una forma bonita e interactiva de acceder a información <br>
-								sin tener que saturar la página inicial
-							</span>
-						</div>
-			    </li>
-			  </ul>
+					    </li>
+						    <li>
+						        <div class="collapsible-header"><i class="material-icons">whatshot</i>Cualquier cosa</div>
+						        <div class="collapsible-body">
+										<span>Esta es una forma bonita e interactiva de acceder a información <br>
+											sin tener que saturar la página inicial
+										</span>
+							    </div>
+						    </li>
+					    </ul>
 
-				<div class="container">
-					<h5>Este es el ejemplo de una gráfica donde se podrá mostrar la sección de estadísticas,
-						 pudiendo soportar diversos sensores al mismo tiempo</h5>
-					<div class="card-panel">
-						<h4>Estadisticas</h4>
-						<div class="row">
-							<span><i class="material-icons icon-1">fiber_manual_record</i>Temperatura</span>
-							<span><i class="material-icons icon-2">fiber_manual_record</i>Humedad</span>
-							<span><i class="material-icons icon-3">fiber_manual_record</i>Luminosidad</span>
-							<span><i class="material-icons icon-4">fiber_manual_record</i>Radiacion</span>
-							<span><i class="material-icons icon-5">fiber_manual_record</i>CO2</span>
-							<span><i class="material-icons icon-6">fiber_manual_record</i>Viento</span>
-							<span><i class="material-icons icon-7">fiber_manual_record</i>Rocio</span>
-							<span><i class="material-icons icon-8">fiber_manual_record</i>Voltaje</span>
+						<div class="container">
+							<h5>Este es el ejemplo de una gráfica donde se podrá mostrar la sección de estadísticas,
+								 pudiendo soportar diversos sensores al mismo tiempo</h5>
+							<div class="card-panel">
+								<h4>Estadisticas</h4>
+								<div class="row">
+									<span><i class="material-icons icon-1">fiber_manual_record</i>Temperatura</span>
+									<span><i class="material-icons icon-2">fiber_manual_record</i>Humedad</span>
+									<span><i class="material-icons icon-3">fiber_manual_record</i>Luminosidad</span>
+									<span><i class="material-icons icon-4">fiber_manual_record</i>Radiacion</span>
+									<span><i class="material-icons icon-5">fiber_manual_record</i>CO2</span>
+									<span><i class="material-icons icon-6">fiber_manual_record</i>Viento</span>
+									<span><i class="material-icons icon-7">fiber_manual_record</i>Rocio</span>
+									<span><i class="material-icons icon-8">fiber_manual_record</i>Voltaje</span>
+								</div>
+								<canvas id="multipleChart"></canvas>
+							</div>
 						</div>
-						<canvas id="multipleChart"></canvas>
+
+						<div class="container">
+							<h3>Ejemplos</h3>
+							<div class="card-panel">
+								<a class="waves-effect waves-light btn">button</a>
+								<div class="input-field">
+								    <select multiple>
+								      <option value="" disabled selected>Choose your option</option>
+								      <option value="1">Option 1</option>
+								      <option value="2">Option 2</option>
+								      <option value="3">Option 3</option>
+								    </select>
+								 </div>
+							</div>
+						</div>
+						<div class="container">
+							<h3>Tabla</h3>
+							<div class="card-panel">
+								<table>
+							        <thead>
+							          <tr>
+							              <th>Name</th>
+							              <th>Item Name</th>
+							              <th>Item Price</th>
+							          </tr>
+							        </thead>
+
+							        <tbody>
+							          <tr>
+							            <td>Alvin</td>
+							            <td>Eclair</td>
+							            <td>$0.87</td>
+							          </tr>
+							          <tr>
+							            <td>Alan</td>
+							            <td>Jellybean</td>
+							            <td>$3.76</td>
+							          </tr>
+							          <tr>
+							            <td>Jonathan</td>
+							            <td>Lollipop</td>
+							            <td>$7.00</td>
+							          </tr>
+							        </tbody>
+							      </table>
+							</div>
+
+						</div>
 					</div>
 				</div>
-
 
 		</body>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -104,6 +175,24 @@
 		  $(document).ready(function(){
 		    $('.collapsible').collapsible();
 		  });
+
+		  $(document).ready(function(){
+		    $('.sidenav').sidenav();
+		  });
+
+
+
+		  // Sidenav
+
+		  function openNav() {
+			    document.getElementById("mySidenav").style.width = "180px";
+			    document.getElementById("main").style.marginLeft = "180px";
+			}
+
+			function closeNav() {
+			    document.getElementById("mySidenav").style.width = "0";
+			    document.getElementById("main").style.marginLeft= "0";
+			}
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 	<script src="js/chart_logic.js"></script>
