@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">	
+		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/font-style.css">
 		<link rel="stylesheet" type="text/css" href="css/grafica-style.css">
+		<link rel="stylesheet" type="text/css" href="css/modify_material_components.css">
 	</head>
 
 		<body>
-			<div class="container">
-				<div class="row">
-					<a class="btn-flat" id="changeThemeButton">Cambiar tema a oscuro</a>
+			<div class="container" id="change">
+				<div class="row center" style="display : none;">
+					<a class="btn waves-effect waves-teal	" id="changeThemeButton">Cambiar tema a oscuro</a>
 				</div>
 				<div class="row">
 					<h1>Definición de estilos</h1>
@@ -27,7 +28,7 @@
 			</div>
 			<div class="row">
 				<div class="col s12 m5 ">
-					<div class="card-panel">
+					<div class="card-panel z-depth-3">
 						<p>Esta es una tarjeta</p>
 					</div>
 				</div>
@@ -76,7 +77,7 @@
 						 pudiendo soportar diversos sensores al mismo tiempo</h5>
 					<div class="card-panel">
 						<h4>Estadisticas</h4>
-						<div class="row"> 
+						<div class="row">
 							<span><i class="material-icons icon-1">fiber_manual_record</i>Temperatura</span>
 							<span><i class="material-icons icon-2">fiber_manual_record</i>Humedad</span>
 							<span><i class="material-icons icon-3">fiber_manual_record</i>Luminosidad</span>
