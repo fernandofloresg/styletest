@@ -126,8 +126,12 @@
 								      <option value="3">Opción 3</option>
 								    </select>
 								 </div>
+								 <label>Seleccionar fecha:</label>
+								<input type="text" value="Fecha incial" class="datepicker">
 							</div>
 						</div>
+
+						<!-- Tabla -->
 						<div class="container">
 							<h3>Tabla</h3>
 							<div class="card-panel z-depth-3">
@@ -159,7 +163,6 @@
 							        </tbody>
 							      </table>
 							</div>
-
 						</div>
 					</div>
 				</div>
@@ -180,6 +183,10 @@
 		  $(document).ready(function(){
 		    $('.sidenav').sidenav();
 		  });
+
+		  $(document).ready(function(){
+		    $('.datepicker').datepicker();
+		  })
 
 
 
